@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+  <section class="chart">
+    <div class="container">
+      <div class="chart__up">
+        <div class="chart__up-balance">
+          <p class="up-text">My balance</p>
+          <p class="up-price">&#36;921.48</p>
+        </div>
+        <div class="chart__up-logo">
+          <img src="./images/logo.svg" alt="logo chart">
+        </div>
+      </div>
+      <div class="chart__down">
+        <h2 class="chart-title">Spending - Last 7 days</h2>
+        <div class="chart-bar">
+          <div>
+            <div id="myChart"></div>
+          </div>
+        </div>
+        <div class="chart__down-total">
+          <div class="total-month">
+            <p class="month-text">Total this month</p>
+            <p class="month-price">&#36;478.33</p>
+          </div>
+          <div class="total-percent">
+            <p class="percent-price">+2.4&#37;</p>
+            <p class="percent-text">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sasha Yerokhov</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
