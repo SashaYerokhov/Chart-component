@@ -30,7 +30,7 @@ body {
 }
 
 .chart {
-  max-width: 570px;
+  max-width: 35.625rem;
   padding-inline: 20px;
   margin: 180px auto;
 }
@@ -49,6 +49,7 @@ body {
 .up-text {
   color: var(--very-pale-orange);
 }
+
 .up-price {
   color: var(--very-pale-orange);
   font-size: 1.875rem;
@@ -62,9 +63,11 @@ body {
   padding-inline: 30px;
   padding-block-start: 60px;
 }
+
 .chart-title {
   font-size: 2rem;
 }
+
 .chart-bar {
   min-height: 17.5rem;
   border-bottom: 2px solid var(--cream);
