@@ -1,0 +1,190 @@
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+.dm-sans-regular {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.dm-sans-bold {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--cream);
+  font-size: 1rem;
+  max-width: 90rem;
+  width: 100%;
+  height: 64rem;
+}
+
+.chart {
+  max-width: 570px;
+  padding-inline: 20px;
+  margin: 180px auto;
+}
+
+.chart__up {
+  background-color: var(--soft-red);
+  height: 8.125rem;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.up-text {
+  color: var(--very-pale-orange);
+}
+.up-price {
+  color: var(--very-pale-orange);
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.chart__down {
+  background-color: hsl(60, 100%, 98%);
+  min-height: 32.1875rem;
+  border-radius: 10px;
+  padding-inline: 30px;
+  padding-block-start: 60px;
+}
+.chart-title {
+  font-size: 2rem;
+}
+.chart-bar {
+  min-height: 17.5rem;
+  border-bottom: 2px solid var(--cream);
+}
+
+#myChart {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  height: 15rem;
+  padding-block-start: 65px;
+  max-width: 28.75rem;
+}
+
+.bar {
+  width: 3.125rem;
+  position: relative;
+  text-align: center;
+  transition: height 0.3s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bar span {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.bar .label {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.875rem;
+  color: var(--medium-brown);
+}
+
+.bar .tooltip {
+  display: none;
+  position: absolute;
+  top: -50px;
+  left: -10px;
+  width: 4.6875rem;
+  height: 2.5rem;
+  background-color: var(--dark-brown);
+  color: var(--cream);
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  z-index: 1000;
+}
+
+.chart__down-total {
+  padding-block: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.month-text {
+  color: var(--medium-brown);
+}
+.month-price {
+  color: var(--dark-brown);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.percent-price {
+  font-weight: 700;
+  color: var(--dark-brown);
+  text-align: right;
+}
+.percent-text {
+  color: var(--medium-brown);
+}
+
+@media(max-width: 600px) {
+  body {
+    min-height: 41.6875rem;
+  }
+  .chart {
+    margin: 68px auto;
+  }
+
+  .chart__down {
+    padding-block-start: 30px;
+    min-height: 26.25rem;
+  }
+  .chart-title {
+    font-size: 1.375rem;
+  }
+
+  #myChart {
+    padding-block-start: 50px;
+  }
+
+  .bar {
+    width: 2.1875rem;
+  }
+
+  .chart__down-total {
+    padding-block: 25px;
+  }
+
+   .month-price {
+    font-size: 1.625rem;
+  }
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  font-style: italic;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
